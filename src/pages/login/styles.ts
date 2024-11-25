@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -10,8 +9,10 @@ export const Container = styled.div`
   background-color: #f7fafc;
   gap: 12px;
   flex-direction: column;
+  padding: 0 16px; 
 
   @media (max-width: 768px) {
-    gap: 8px;
+    gap: 20px; 
+    padding: 0 20px; 
   }
 `;

@@ -19,4 +19,8 @@ export const StyledInput = styled.input<InputProps>`
     border-color: ${(props) => props.borderColor || theme.colors.borderClean};
     outline: none;
   }
+   @media (max-width: 768px) {
+    width: 300px;
+      
+  }
 `;

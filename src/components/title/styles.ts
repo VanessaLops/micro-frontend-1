@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { TitleProps } from 'design-system';
-import { theme } from '../../../util/theme'; 
+import { theme } from '../../../util/theme';
 
 export const StyledTitle = styled.h1<TitleProps>`
   font-family: 'Inter', sans-serif;
@@ -17,5 +17,8 @@ export const StyledTitle = styled.h1<TitleProps>`
   opacity: ${(props) => props.opacity || theme.layout.opacity};
   top: ${(props) => props.top || theme.layout.top};
   left: ${(props) => props.left || theme.layout.left};
-
+  @media (max-width: 768px) {
+    width: 300px;
+    font-size:30px;
+  }
 `;

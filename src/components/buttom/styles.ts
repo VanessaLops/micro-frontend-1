@@ -26,4 +26,7 @@ export const StyledButton = styled.button<ButtonProps>`
   &:disabled {
     background-color: ${theme.colors.text};
   }
+    @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
